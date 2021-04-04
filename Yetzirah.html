@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Yetzirah CH</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <link rel="stylesheet" href="css/estiloYetzirah.css">
+    </head>
+    <body>
+        <a class="boton" href="index.html">Inicio</a><h1><span>ACTIVIDADES</h1></span>
+        <button class="tablink" onclick="openPage('Par', this, 'black')" id="defaultOpen">Par/Impar</button>
+        <button class="tablink" onclick="openPage('Base', this, 'black')">Base 10</button>
+        <button class="tablink" onclick="openPage('Binario', this, 'black')">Binario y Hexadecimal</button>
+        <button class="tablink" onclick="openPage('Ex', this, 'black')">Examen Tabla Multiplicar</button>
+        <button class="tablink" onclick="openPage('Signos', this, 'black')">Signos zodiacales</button>
+        <button class="tablink" onclick="openPage('DOM', this, 'black')">DOM</button>
+        <button class="tablink" onclick="openPage('Oculta', this, 'black')">Oculta Parrafos</button>
+        <button class="tablink" onclick="openPage('Adv', this, 'black')">Adivina Numero</button>
+        
+        <div id="Par" class="tabcontent">
+            <h3>Practica 1 - Unidad 3</h3>
+            <div class="embed-container">
+                <iframe src="Act_18011177/Practica1/ParImpar.html" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div id="Base" class="tabcontent">
+            <h3>Practica 2 - Unidad 3</h3>
+            <div class="embed-container">
+                <iframe src="Act_18011177/Practica2/Base10.html" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div id="Binario" class="tabcontent">
+            <h3>Practica 3 - Unidad 3</h3>
+            <div class="embed-container">
+                <iframe src="Act_18011177/Practica3/Menu.html" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div id="Ex" class="tabcontent">
+            <h3>Practica 4 - Unidad 3</h3>
+            <div class="embed-container">
+                <iframe src="Act_18011177/Practica4/ex_multiplicar.html" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="Signos" class="tabcontent">
+            <h3>Practica 5 - Unidad 3</h3>
+            <div class="embed-container">
+                <iframe src="Act_18011177/Practica5/Zodiaco.html" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="DOM" class="tabcontent">
+            <h3>Practica 6 - Unidad 3</h3>
+            <div class="embed-container">
+                <iframe src="Act_18011177/Practica6/1.-valida5DOMNumeroEnlaces.html" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="Oculta" class="tabcontent">
+            <h3>Practica 7 - Unidad 3</h3>
+            <div class="embed-container">
+                <iframe src="Act_18011177/Practica7/2.-Muestra-OcultaParrafos-v1.html" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="Adv" class="tabcontent">
+            <h3>Practica 8 - Unidad 3</h3>
+            <div class="embed-container">
+                <iframe src="Act_18011177/Practica8/19AdivinaNumero.html" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <script>
+            function openPage(pageName,elmnt,color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;}
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+   </body>
+</html> 
